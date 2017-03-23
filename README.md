@@ -1,2 +1,2 @@
-# mem-db
+# memdb
 In-memory Database
