@@ -2,8 +2,18 @@ package com.jfree.memdb;
 
 import java.util.Date;
 
+import com.jfree.memdb.MemDB.QueryBuilder;
+import com.jfree.memdb.schema.Column;
+import com.jfree.memdb.schema.DataType;
+import com.jfree.memdb.schema.Database;
+import com.jfree.memdb.schema.Table;
+
 public class ColumnTest {
 	public static void main(String[] args) {
+		Database database = Database.newDatabase("test");
+		database.addTable(Table.newTable("tab").addColumn(Column.newColumn("name", DataType.STRING)));
+		new QueryBuilder("test", "tab").select().where().groupby().orderby().offset().limit().build().execute();
+
 		Column.newColumn("age1", DataType.BOOLEAN).setDefaultValue(true).setAutoIncrement(false);
 		Column.newColumn("age2", DataType.LONG).setDefaultValue(1).setAutoIncrement(true);
 		Column.newColumn("age3", DataType.INTEGER).setDefaultValue(1).setAutoIncrement(true);

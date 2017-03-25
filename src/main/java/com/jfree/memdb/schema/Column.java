@@ -1,5 +1,6 @@
-package com.jfree.memdb;
+package com.jfree.memdb.schema;
 
+import com.jfree.memdb.Validator;
 import com.jfree.memdb.exception.AutoIncrementException;
 import com.jfree.memdb.exception.InvalidColumnNameException;
 import com.jfree.memdb.exception.InvalidDataTypeException;

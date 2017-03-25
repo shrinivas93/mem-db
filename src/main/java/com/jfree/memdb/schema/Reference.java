@@ -1,4 +1,4 @@
-package com.jfree.memdb;
+package com.jfree.memdb.schema;
 
 public class Reference {
 	private Table table;

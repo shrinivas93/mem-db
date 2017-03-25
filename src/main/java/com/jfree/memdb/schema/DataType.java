@@ -1,4 +1,4 @@
-package com.jfree.memdb;
+package com.jfree.memdb.schema;
 
 import java.util.Arrays;
 import java.util.Date;

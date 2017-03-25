@@ -1,9 +1,10 @@
-package com.jfree.memdb;
+package com.jfree.memdb.schema;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
+import com.jfree.memdb.MemDB;
 import com.jfree.memdb.exception.InvalidTableNameException;
 
 public class Table {

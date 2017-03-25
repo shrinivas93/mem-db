@@ -1,4 +1,4 @@
-package com.jfree.memdb;
+package com.jfree.memdb.schema;
 
 import java.util.HashSet;
 import java.util.Set;
